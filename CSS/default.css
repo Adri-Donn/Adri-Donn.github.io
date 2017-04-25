@@ -1,0 +1,304 @@
+/************************************************************
+                
+************************************************************/
+
+html {
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+
+  box-sizing: inherit;
+
+}
+
+/************************************************************
+                
+************************************************************/
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed, 
+
+figure, figcaption, footer, header, hgroup, 
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;
+
+	font-size: 100%;
+
+	font: inherit;
+
+	vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+
+footer, header, hgroup, menu, nav, section {
+
+	display: block;
+
+}
+
+body {
+
+	line-height: 1;
+
+}
+
+ol, ul {
+
+	list-style: none;
+
+}
+
+blockquote, q {
+
+	quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+
+	content: '';
+
+	content: none;
+
+}
+
+table {
+
+	border-collapse: collapse;
+
+	border-spacing: 0;
+
+}
+
+/************************************************************
+                
+************************************************************/
+
+body {
+    margin : 15px auto;
+    width : 900px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+/************************************************************
+                Colonne de présentation
+************************************************************/
+aside#infoColumn {
+    width: 35%;
+    /*background-color: #37474F;*/
+    height: 100%;
+    float: left;
+    border: 1px solid black;
+}
+
+article#header {
+    background-color: #263238;
+    padding: 10px;
+}
+
+article#header p {
+    color: white;
+    margin: 5px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+article#more {
+    /*color: white;*/
+    padding-left: 15px;
+    font-size: 1em;
+}
+
+#header h2, #header h3 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#header h2{
+    font-weight: 1.5em;
+    font-weight: bold;
+
+    margin: 5px;
+}
+
+#header h3 {
+    font-weight: 2em;
+}
+
+article#more section {
+    margin: 10px 5px 20px 5px;
+}
+
+article#more section ul li a {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+article#more section :nth-child(n) {
+     line-height: 1.2em;
+}
+
+article#more section h4 {
+    margin: 5px 0;
+}
+
+
+/************************************************************
+                        Center
+************************************************************/
+section#cv {
+    color: #263238;
+    background-color: #FFFFFF;
+    width: 100%;
+    position:relative;
+    padding: 0;
+}
+
+section#cv h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+article.cv {
+    width: 64%;
+    display: inline-block;
+}
+
+article.cv section {
+    margin-bottom: 15px;
+}
+
+.carte {
+    /*background-color: #CECECE;*/
+    padding: 0 10px 5px 10px;
+    /*border: 1px solid black;*/
+}
+
+.carte:nth-child(2n) {
+    margin: 5px 0;
+}
+
+/************************************************************
+                        Cartouche
+************************************************************/
+div.cartouche {
+    width: 100%;
+    margin: 10px 5px 10px 5px;
+    border: 1px solid black;
+
+    display: block;
+}
+
+div.cartouche h5 {
+    background-color: #37474F;
+    color: white;
+    font-size: 1.3em;
+    line-height: 1.5;
+    padding: 5px 15px 5px 15px;
+    width: 100%;
+}
+
+div.cartouche h5 span.date {
+    float: right;
+    font-size: 0.8em;
+}
+
+div.cartouche h6 {
+    /*
+    background-color: #263238;
+    color: white;
+    */
+    line-height: 1.2em;
+    padding: 0 20px 5px 20px;
+    font-size: 1em;
+}
+
+div.cartouche ul {
+    /*
+    background-color: #263238;
+    color: white;
+    */
+    line-height: 1.2em;
+    padding: 5px 20px 5px 20px;
+    font-size: 0.9em;
+}
+
+div.cartouche ul li a {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+div.cartouche p span {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 1.2em;
+}
+
+div.cartouche p {
+    /*
+    background-color: #263238;
+    color: white;
+    */
+    line-height: 1.2em;
+    padding: 10px 20px 20px 20px;
+    font-size: 0.9em;
+}
+
+/************************************************************
+                            Helpers
+************************************************************/
+.img-circle {
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+img.img_flag {
+    height: 50px;
+}
+
+img.img_logo {
+    height: 70px;
+}
+
+.saut {
+    /* saut apres le bloc*/
+    page-break-after : always;
+    /* saut avant le bloc*/
+    page-break-before : always;
+}
