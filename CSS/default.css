@@ -282,6 +282,14 @@ div.cartouche p {
 /************************************************************
                             Helpers
 ************************************************************/
+.logo_certifs {
+    text-align: center;
+}
+
+.logo_certif {
+    width: 260px;
+}
+
 .img-circle {
     border-radius: 50%;
     margin: 0 auto;
@@ -289,7 +297,7 @@ div.cartouche p {
 }
 
 img.img_flag {
-    height: 50px;
+    height: 15px;
 }
 
 img.img_logo {
